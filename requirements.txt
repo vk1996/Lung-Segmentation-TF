@@ -1,0 +1,4 @@
+tensorflow
+segmentation-models
+albumentations
+
