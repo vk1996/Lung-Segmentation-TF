@@ -6,5 +6,13 @@ desired image and mask path in training notebook
 
 ![alt text](https://github.com/vk1996/Lung-Segmentation-TF/blob/master/lung_test.png)
 
+## Usage ##
+
+```
+pip3 install -r requirements.txt
+
+python3 test.py
+
+```
 ## Known Issues ##
-This is just a half-trained model need to train more the results may not be perfect
+This is just a half-cooked model need to train more the results may not be perfect
