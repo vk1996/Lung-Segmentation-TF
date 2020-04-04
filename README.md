@@ -15,4 +15,4 @@ python3 test.py
 
 ```
 ## Known Issues ##
-This is just a half-cooked model need to train more the results may not be perfect
+This is just a half-cooked model created for a temporary use case of another project ,need to train more the results may not be perfect
