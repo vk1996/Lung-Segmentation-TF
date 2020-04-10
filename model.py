@@ -33,10 +33,6 @@ import utils
 
 
 
-#def swish_fn(x_):
-#return x_*Activation('sigmoid')(x_)
-#return x_*Activation('tanh')(Activation('softplus')(x_))
-
 def get_shape(z):
     if hasattr(z,'_keras_shape'):
         #print(z._keras_shape[-1])
@@ -58,14 +54,9 @@ def se(x_):
     y=swish(y)
     return y
 
-#def se(x_):
-#    return Lambda(se_fn, output_shape=x_._keras_shape[1:])(x_)
     
 def swish(x_):
-    #return Lambda(swish_fn, output_shape=x_._keras_shape[1:])(x_)
-    #return Multiply()([x_,Activation('tanh')(Activation('softplus')(x_))])
     return Multiply()([x_,Activation('sigmoid')(x_)])
-    #return Activation('relu')(x_)
 
 def build_model(image_size,
                 redux=1.0,
